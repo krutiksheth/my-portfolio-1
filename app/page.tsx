@@ -83,17 +83,19 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-xs uppercase tracking-[0.18em] text-indigo-400 font-semibold">
-                Snapshot
-              </p>
               <div className="mt-3 space-y-1 text-sm md:text-base">
                 <p className="font-semibold text-white">Krutik Sheth</p>
-                <p className="text-slate-400 text-xs">Ahmedabad, India 380015</p>
+                <p className="text-slate-400 text-xs">
+                  Ahmedabad, India 380015
+                </p>
                 <p className="text-slate-500 text-xs">Full-time freelancer</p>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-2">
                 {stats.map((item) => (
-                  <div key={item.label} className="rounded-lg bg-slate-900/80 border border-slate-700/50 p-3 backdrop-blur-sm">
+                  <div
+                    key={item.label}
+                    className="rounded-lg bg-slate-900/80 border border-slate-700/50 p-3 backdrop-blur-sm"
+                  >
                     <p className="text-lg font-bold text-indigo-300">
                       {item.value}
                     </p>
